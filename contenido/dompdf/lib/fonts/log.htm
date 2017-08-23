@@ -1,0 +1,163 @@
+<span style='color: #000'>102 frames</span>	<span style='color: #900'>12,800 KB</span>	<span style='color: #090'>1,177.20 ms</span>	<span style='color: #009' title='Quirksmode'><span style='color: #c00'>ON</span></span><br />
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <title>Rapid Jackets</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="../media/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../media/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../media/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../media/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../media/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../media/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../media/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../media/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../media/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../media/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/img/favicon/favicon-16x16.png"> 
+    <link href="../css/w3.css" rel="stylesheet" type="text/css">
+    <link href="../css/stilos_propios.css" rel="stylesheet" type="text/css">
+    <link href="../css/sprite.css" rel="stylesheet" type="text/css">
+    <link href="../css/manager_theme.css" rel="stylesheet" type="text/css">
+</head>    <body>
+        <header>
+
+    <span class="w3-opennav w3-xxxlarge w3-hide-large w3-theme-light w3-display-topleft" style="position: fixed; z-index: 1;" onclick="show_sidebar('admin_main_menu')">
+        ☰
+    </span>
+    <div class="w3-sidenav w3-theme-d5 w3-card-4 w3-animate-left" id="admin_main_menu" style="display: none">
+        <a href="javascript:void(0)" onclick="hide_sidebar('admin_main_menu')" class="w3-closenav w3-large w3-hide-large w3-hover-red">Cerrar ×</a>
+        <a href="gestion_productos.php" class="w3-padding-4 w3-hover-blue">Gestión de Productos</a>
+        <a href="gestion_categorias.php" class="w3-padding-4 w3-hover-light-blue">Gestión de Categorías</a>
+        <a href="#" class="w3-padding-4 w3-hover-gray">Gestión de Catalogos</a>
+        <a href="#" class="w3-padding-4 w3-hover-amber">Gestión de Inventarios</a>
+        <a href="#" class="w3-padding-4 w3-hover-yellow">Gestión de Usuarios</a>
+        <a href="#" class="w3-padding-4 w3-hover-green">Gestión de Pedidos</a>
+        <a href="#" class="w3-padding-4 w3-hover-lime">Gestión de Facturas</a>
+        <a href="#" class="w3-padding-4 w3-hover-black">Gestión de Reportes</a>
+        <a href="inicio.php" class="w3-padding-4 w3-hover-aqua">Pagina de Inicio</a>
+    </div>
+
+    <a name="UP"></a>
+    <div class="m-header2 w3-theme-d1">
+        <div class="w3-row">
+            <div class="w3-quarter w3-container">
+                <img class="m-logo" src="../media/img/logo.png" alt="Logo de Creaciones Julieth" title="Creaciones Julieth">
+            </div>
+            <div class="w3-threequarter w3-container">
+                <div class="tit1">Creaciones Juliet</div>
+                <span class="tit2">Panel de <i>Administrador</i></span>
+            </div>
+        </div>
+    </div>
+
+    <a name="UP"></a>
+    <a href="#UP"><button class="m-boton-go-up">&uparrow;</button></a>
+
+    <nav class="m-nav">
+        <ul class="w3-navbar w3-theme-dark w3-hide-medium w3-hide-small w3-small">
+            <li><a href="gestion_productos.php" class="w3-padding-4 w3-hover-blue">Gestión de Productos</a></li>
+            <li><a href="gestion_categorias.php" class="w3-padding-4 w3-hover-light-blue">Gestión de Categorías</a></li>
+            <li><a href="#" class="w3-padding-4 w3-hover-gray">Gestión de Catalogos</a></li>
+            <li><a href="#" class="w3-padding-4 w3-hover-amber">Gestión de Inventarios</a></li>
+            <li><a href="#" class="w3-padding-4 w3-hover-yellow">Gestión de Usuarios</a></li>
+            <li><a href="#" class="w3-padding-4 w3-hover-green">Gestión de Pedidos</a></li>
+            <li><a href="#" class="w3-padding-4 w3-hover-lime">Gestión de Facturas</a></li>
+            <li><a href="#" class="w3-padding-4 w3-hover-black">Gestión de Reportes</a></li>
+            <li><a href="inicio.php" class="w3-padding-4 w3-hover-aqua">Pagina de Inicio</a></li>
+        </ul>
+    </nav>
+
+</header>        <section class="m-section">
+
+
+            <div class="w3-row">
+                <div class="w3-quarter w3-container"></div>
+                <div class="w3-half">
+                    <div class="w3-container w3-card-8 w3-theme-d4" id="RTA"></div>
+                    <a href="gestion_productos_crud.php?report=A"><button class="w3-btn w3-green w3-large w3-round-medium">Imprimir Todo</button></a>
+                    <hr class="w3-lime w3-padding-4">
+                    <form method="GET" name="pdf" action="gestion_productos_crud.php">
+                        <input type="hidden" value="B" name="report">
+                        <select name="idCat" id="idCat" class="m-selects">\n\t<option value="NDh8" selected>Seleccionar</option>\n\t<option value="NTB8">UNIFORMES PARA APRENDICES SENA</option>\n\t<option value="NTF8">UNIFORMES PARA INSTRUCTORES SENA</option>\n\t<option value="NTJ8">UNIFORMES PARA ESTUDIANTES DE COLEGIO</option>\n\t<option value="NTN8">CHAQUETAS</option>\n\t<option value="NTR8">OVEROLES DE TODOS MATERIALES</option>\n\t<option value="NTV8">UNIFORMES FORMALES</option>\n\t<option value="NTZ8">SUDADERAS PARA DEPPORTES SENA</option>\n\t<option value="NTd8">BATAS DE EDUCACION</option>\n\t<option value="NDl8NDh8">ELEMENTOS DE PROTECCION</option>\n\t<option value="NDl8NDl8">SUDADERAS DAMA Y CABALLERO</option>\n\t<option value="NDl8NTB8">UNIFORMES DE DIARIO</option>\n</select>                        <input type="submit" class="w3-btn w3-green w3-large w3-round-medium" value="Imprimir por categoria">
+                    </form>
+                    <hr class="w3-lime w3-padding-4">
+                </div>
+                <div class="w3-quarter w3-container"></div>
+            </div>
+            <div id="RESPUESTA"></div>
+            <div class="w3-container w3-theme-l1 w3-center w3-card-8 w3-padding-8 w3-tiny"><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="firstPage('producto_paginacion.php', 'TABLA_CRUD');"><<</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="prevPage('producto_paginacion.php', 'TABLA_CRUD');"><</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="goPage('producto_paginacion.php', 'TABLA_CRUD', 1);">1</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="goPage('producto_paginacion.php', 'TABLA_CRUD', 2);">2</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="goPage('producto_paginacion.php', 'TABLA_CRUD', 3);">3</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="goPage('producto_paginacion.php', 'TABLA_CRUD', 4);">4</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="goPage('producto_paginacion.php', 'TABLA_CRUD', 5);">5</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="goPage('producto_paginacion.php', 'TABLA_CRUD', 6);">6</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="nextPage('producto_paginacion.php', 'TABLA_CRUD');">></button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="lastPage('producto_paginacion.php', 'TABLA_CRUD');">>></button></a></div>            <div id="TABLA_CRUD">
+                <div class="w3-theme-l4 w3-card-4">
+                <div class="w3-round-large w3-teal w3-xlarge w3-container">
+                    Obtenidos 5 Productos
+                    <br> <span class="w3-tag w3-round-medium w3-small w3-theme-d1">Página 1 de 6</span>
+                </div>  
+                <table class="w3-table-all w3-small w3-responsive">
+                    <tr class="w3-light-green">
+                        <th>ID</th>
+                        <th>NOMBRE DEL PRODUCTO</th>
+                        <th>PRECIO</th>
+                        <th>ESTADO</th>
+                        <th>Actualizar</th>
+                        <th>Activar/Desactivar</th>
+                    </tr><tr class="w3-hover-light-blue w3-white">
+                        <td>pro0000001</td>
+                        <td>CHAQUETA PARA APRENDICES ADSI</td>
+                        <td>$ 45.000,00</td><td>Activo</td><td>
+                        <img class="m-crud_icons" src="../media/img/update_icon.png" onclick="mostrarUpdateFormProducto2('pro0000001');">
+                    </td>
+                    <td>
+                       <button class="w3-btn w3-tiny w3-red w3-round w3-hover-gray" onclick = "disable_enable_producto('RESPUESTA', 0, 'pro0000001');">Desactivar</button> 
+                    </td>
+                </tr><tr class="w3-hover-light-blue w3-white">
+                        <td>pro0000002</td>
+                        <td>OVEROL DE MECIDYCE</td>
+                        <td>$ 50.000,00</td><td>Activo</td><td>
+                        <img class="m-crud_icons" src="../media/img/update_icon.png" onclick="mostrarUpdateFormProducto2('pro0000002');">
+                    </td>
+                    <td>
+                       <button class="w3-btn w3-tiny w3-red w3-round w3-hover-gray" onclick = "disable_enable_producto('RESPUESTA', 0, 'pro0000002');">Desactivar</button> 
+                    </td>
+                </tr><tr class="w3-hover-light-blue w3-white">
+                        <td>pro0000003</td>
+                        <td>OVEROL DE METALMECANICA</td>
+                        <td>$ 45.000,00</td><td>Activo</td><td>
+                        <img class="m-crud_icons" src="../media/img/update_icon.png" onclick="mostrarUpdateFormProducto2('pro0000003');">
+                    </td>
+                    <td>
+                       <button class="w3-btn w3-tiny w3-red w3-round w3-hover-gray" onclick = "disable_enable_producto('RESPUESTA', 0, 'pro0000003');">Desactivar</button> 
+                    </td>
+                </tr><tr class="w3-hover-light-blue w3-white">
+                        <td>pro0000004</td>
+                        <td>OVEROL DE ELECTRICIDAD</td>
+                        <td>$ 35.000,00</td><td>Activo</td><td>
+                        <img class="m-crud_icons" src="../media/img/update_icon.png" onclick="mostrarUpdateFormProducto2('pro0000004');">
+                    </td>
+                    <td>
+                       <button class="w3-btn w3-tiny w3-red w3-round w3-hover-gray" onclick = "disable_enable_producto('RESPUESTA', 0, 'pro0000004');">Desactivar</button> 
+                    </td>
+                </tr><tr class="w3-hover-light-blue w3-white">
+                        <td>pro0000005</td>
+                        <td>OVEROL DE MANTENIEMIENTO DE COMPUTO</td>
+                        <td>$ 48.000,00</td><td>Activo</td><td>
+                        <img class="m-crud_icons" src="../media/img/update_icon.png" onclick="mostrarUpdateFormProducto2('pro0000005');">
+                    </td>
+                    <td>
+                       <button class="w3-btn w3-tiny w3-red w3-round w3-hover-gray" onclick = "disable_enable_producto('RESPUESTA', 0, 'pro0000005');">Desactivar</button> 
+                    </td>
+                </tr></table>
+            </div>            </div>
+            <div class="w3-container w3-theme-l1 w3-center w3-card-8 w3-padding-8 w3-tiny"><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="firstPage('producto_paginacion.php', 'TABLA_CRUD');"><<</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="prevPage('producto_paginacion.php', 'TABLA_CRUD');"><</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="goPage('producto_paginacion.php', 'TABLA_CRUD', 1);">1</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="goPage('producto_paginacion.php', 'TABLA_CRUD', 2);">2</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="goPage('producto_paginacion.php', 'TABLA_CRUD', 3);">3</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="goPage('producto_paginacion.php', 'TABLA_CRUD', 4);">4</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="goPage('producto_paginacion.php', 'TABLA_CRUD', 5);">5</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="goPage('producto_paginacion.php', 'TABLA_CRUD', 6);">6</button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="nextPage('producto_paginacion.php', 'TABLA_CRUD');">></button></a><button class="w3-btn w3-theme-dark  w3-round-medium w3-hover-blue-gray" onclick="lastPage('producto_paginacion.php', 'TABLA_CRUD');">>></button></a></div>        </section>  
+        <footer class="m-footer">
+    <span class="tit3 w3-card-4 w3-theme-d4">Creaciones Julieth</span>
+</footer>
+<script src="../js/vista.js"></script>
+<script src="../js/ajax_conections_entities.js"></script>
+<script src="controlador/controllers/AjaxManager.js"></script>
+    </body>
+
+</html>
